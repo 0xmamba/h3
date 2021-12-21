@@ -5,6 +5,10 @@ on:
     branches: [ master ]
   schedule:
     - cron: '39 9 * * 3'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Manual trigger'
 
 jobs:
   analyze:
